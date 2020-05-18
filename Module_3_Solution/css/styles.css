@@ -31,10 +31,6 @@ body{
     color: black;
 }
 
-#nav-list a:hover {
-    background: #e7e7e7;
-}
-
 #main-content{
     text-align: center; 
     margin-left: auto;
