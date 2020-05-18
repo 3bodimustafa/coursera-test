@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     background-color: rgba(195, 210, 233, 0.836);
 }
@@ -40,8 +44,13 @@ body{
 #sub-content {
     background-color: darkgray;
     border: 2px solid #000;
-    height: 1000px;
     overflow: hidden;
+    height: auto;
+    padding: 5px;
+}
+
+#sub-content p{
+    text-align: left;
 }
 
 .sub-heading {
@@ -49,26 +58,61 @@ body{
     margin-top: 0;
 }
 
-#chicken{
-    text-align: left;
-
-}
 
 #nav-list {
     text-align: center;
 }
 
+#nav-to-top {
+    border: 1px solid #000;
+    text-align: center;
+    width: auto;
+    background-color: rgb(122, 170, 192);
+}
+
+#nav-to-top a {
+    color: #000
+}
+
+#nav-to-top:hover {
+    background-color: lightcyan;
+}
+
+@media(min-width: 1200px) {
+    
+}
+
 @media (min-width: 992px) and (max-width: 1199px) {
+    #nav-to-top {
+        clear: left;
+        width: 120px;
+    }
+
+    #sub-content {
+        margin: 0 0 10px 0;
+    }
+
     
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    
+    #nav-to-top {
+        clear: left;
+        width: 120px;
+    }
+
+    #sub-content {
+        margin: 0 0 10px 0;
+    }
 }
 
 @media (max-width: 767px) {
     #main-content{
         margin-left: 20px;
         margin-right: 20px;
+    }
+
+    #sub-content {
+        margin: 0 0 10px 0;
     }
 }
